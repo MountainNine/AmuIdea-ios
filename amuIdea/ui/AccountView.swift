@@ -1,15 +1,18 @@
 //
-//  LoginView.swift
+//  AccountView.swift
 //  amuIdea
 //
-//  Created by gusan on 2022/01/06.
+//  Created by gusan on 2022/01/08.
 //
 
 import SwiftUI
 
-struct LoginView : View {
+import SwiftUI
+
+struct AccountView : View {
     @State private var editId = ""
     @State private var editPw = ""
+    @State private var editNick = ""
     @State private var isToggled = false
 
     var body : some View {
@@ -40,22 +43,16 @@ struct LoginView : View {
             Spacer()
                 .frame(height: 20.0)
             HStack {
-                CheckBoxView(checked: $isToggled)
-                Text("자동 로그인")
-                    .font(.title3)
-                Spacer()
-            }
-            Spacer()
-                .frame(height:20)
-            Button(action: {
+                Text("Nick")
+                    .font(.custom("custom", size: 16))
+                    .padding(.trailing)
+                    .frame(width: 48.0)
                 
-            }) {
-                Spacer()
-                Text("로그인")
-                    .foregroundColor(Color.white)
-                Spacer()
-            }.frame(height: 40.0).background(Color.black)
-            
+                VStack {
+                    TextField("닉네임을 입력하세요.", text: $editPw)
+                    Divider()
+                }
+            }
             Spacer()
                 .frame(height:20)
             Button(action: {
@@ -66,13 +63,24 @@ struct LoginView : View {
                     .foregroundColor(Color.white)
                 Spacer()
             }.frame(height: 40.0).background(Color.black)
+            
+            Spacer()
+                .frame(height:20)
+            Button(action: {
+                
+            }) {
+                Spacer()
+                Text("취소")
+                    .foregroundColor(Color.white)
+                Spacer()
+            }.frame(height: 40.0).background(Color.black)
         }
         .padding(32.0)
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        AccountView()
     }
 }

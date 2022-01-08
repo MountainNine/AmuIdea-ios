@@ -16,6 +16,7 @@
 		1C9FC06C278589A700AED43A /* amuIdeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC06B278589A700AED43A /* amuIdeaUITests.swift */; };
 		1C9FC06E278589A700AED43A /* amuIdeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC06D278589A700AED43A /* amuIdeaUITestsLaunchTests.swift */; };
 		1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */; };
+		1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7B7F227895A9800B624FF /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		1C9FC06B278589A700AED43A /* amuIdeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaUITests.swift; sourceTree = "<group>"; };
 		1C9FC06D278589A700AED43A /* amuIdeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		1CF7B7F227895A9800B624FF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +100,10 @@
 		1C9FC04F278589A400AED43A /* amuIdea */ = {
 			isa = PBXGroup;
 			children = (
+				1CF7B7F127895A2F00B624FF /* ui */,
 				1C9FC050278589A400AED43A /* amuIdeaApp.swift */,
-				1C9FC052278589A400AED43A /* ContentView.swift */,
-				1C1918ED27869D8A00FDE142 /* LoginView.swift */,
 				1C9FC054278589A600AED43A /* Assets.xcassets */,
 				1C9FC056278589A600AED43A /* Preview Content */,
-				1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */,
 			);
 			path = amuIdea;
 			sourceTree = "<group>";
@@ -131,6 +131,17 @@
 				1C9FC06D278589A700AED43A /* amuIdeaUITestsLaunchTests.swift */,
 			);
 			path = amuIdeaUITests;
+			sourceTree = "<group>";
+		};
+		1CF7B7F127895A2F00B624FF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1C9FC052278589A400AED43A /* ContentView.swift */,
+				1C1918ED27869D8A00FDE142 /* LoginView.swift */,
+				1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */,
+				1CF7B7F227895A9800B624FF /* AccountView.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				1C9FC053278589A400AED43A /* ContentView.swift in Sources */,
 				1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */,
 				1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */,
+				1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
