@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C09702027895D400045F1BE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09701F27895D400045F1BE /* StartView.swift */; };
+		1C09702227895FF80045F1BE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09702127895FF80045F1BE /* MainView.swift */; };
 		1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1918ED27869D8A00FDE142 /* LoginView.swift */; };
+		1C5CE00D278A7B5D00D07F03 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE00C278A7B5D00D07F03 /* ListView.swift */; };
 		1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC050278589A400AED43A /* amuIdeaApp.swift */; };
 		1C9FC053278589A400AED43A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC052278589A400AED43A /* ContentView.swift */; };
 		1C9FC055278589A600AED43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FC054278589A600AED43A /* Assets.xcassets */; };
@@ -37,7 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C09701F27895D400045F1BE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		1C09702127895FF80045F1BE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1C1918ED27869D8A00FDE142 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1C5CE00C278A7B5D00D07F03 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		1C9FC04D278589A400AED43A /* amuIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amuIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9FC050278589A400AED43A /* amuIdeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaApp.swift; sourceTree = "<group>"; };
 		1C9FC052278589A400AED43A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 				1C1918ED27869D8A00FDE142 /* LoginView.swift */,
 				1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */,
 				1CF7B7F227895A9800B624FF /* AccountView.swift */,
+				1C09701F27895D400045F1BE /* StartView.swift */,
+				1C09702127895FF80045F1BE /* MainView.swift */,
+				1C5CE00C278A7B5D00D07F03 /* ListView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -274,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5CE00D278A7B5D00D07F03 /* ListView.swift in Sources */,
 				1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */,
+				1C09702227895FF80045F1BE /* MainView.swift in Sources */,
 				1C9FC053278589A400AED43A /* ContentView.swift in Sources */,
 				1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */,
+				1C09702027895D400045F1BE /* StartView.swift in Sources */,
 				1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */,
 				1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */,
 			);
