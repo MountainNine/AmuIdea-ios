@@ -11,6 +11,9 @@
 		1C09702227895FF80045F1BE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09702127895FF80045F1BE /* MainView.swift */; };
 		1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1918ED27869D8A00FDE142 /* LoginView.swift */; };
 		1C5CE00D278A7B5D00D07F03 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE00C278A7B5D00D07F03 /* ListView.swift */; };
+		1C5CE011278A8CF900D07F03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE010278A8CF900D07F03 /* User.swift */; };
+		1C5CE013278A8D3800D07F03 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE012278A8D3800D07F03 /* Post.swift */; };
+		1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */; };
 		1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC050278589A400AED43A /* amuIdeaApp.swift */; };
 		1C9FC053278589A400AED43A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC052278589A400AED43A /* ContentView.swift */; };
 		1C9FC055278589A600AED43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FC054278589A600AED43A /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		1C09702127895FF80045F1BE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1C1918ED27869D8A00FDE142 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1C5CE00C278A7B5D00D07F03 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		1C5CE010278A8CF900D07F03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1C5CE012278A8D3800D07F03 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleResponse.swift; sourceTree = "<group>"; };
 		1C9FC04D278589A400AED43A /* amuIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amuIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9FC050278589A400AED43A /* amuIdeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaApp.swift; sourceTree = "<group>"; };
 		1C9FC052278589A400AED43A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5CE00E278A8C9400D07F03 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		1C5CE00F278A8CE600D07F03 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1C5CE010278A8CF900D07F03 /* User.swift */,
+				1C5CE012278A8D3800D07F03 /* Post.swift */,
+				1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		1C9FC044278589A400AED43A = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +129,8 @@
 		1C9FC04F278589A400AED43A /* amuIdea */ = {
 			isa = PBXGroup;
 			children = (
+				1C5CE00F278A8CE600D07F03 /* model */,
+				1C5CE00E278A8C9400D07F03 /* vm */,
 				1CF7B7F127895A2F00B624FF /* ui */,
 				1C9FC050278589A400AED43A /* amuIdeaApp.swift */,
 				1C9FC054278589A600AED43A /* Assets.xcassets */,
@@ -287,10 +312,13 @@
 				1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */,
 				1C09702227895FF80045F1BE /* MainView.swift in Sources */,
 				1C9FC053278589A400AED43A /* ContentView.swift in Sources */,
+				1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */,
 				1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */,
+				1C5CE011278A8CF900D07F03 /* User.swift in Sources */,
 				1C09702027895D400045F1BE /* StartView.swift in Sources */,
 				1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */,
 				1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */,
+				1C5CE013278A8D3800D07F03 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
