@@ -25,7 +25,7 @@ struct StartView: View {
                 Spacer()
                     .frame(width:57)
             }.frame(height: 40.0).background(Color.black)
-        }
+        }.navigationBarBackButtonHidden(true)
         
     }
 }
