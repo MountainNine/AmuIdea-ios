@@ -68,7 +68,7 @@ struct LoginView : View {
                     return
                 }
                 
-                self.willMoveToNextScreen = 1
+                callLogin(id: self.editId, pw: self.editPw)
             }) {
                 Spacer()
                 Text("로그인")
@@ -94,6 +94,15 @@ struct LoginView : View {
             }
         }
         .padding(32.0)
+        }
+    }
+    
+    func callLogin(id: String, pw: String) {
+        UserViewModel().callLogin(id: id, pw: pw) {
+            (response) in
+            if(response?.statusCode == 200) {
+                self.willMoveToNextScreen = 1
+            }
         }
     }
 }

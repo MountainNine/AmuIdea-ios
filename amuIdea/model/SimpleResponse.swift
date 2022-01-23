@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct SimpleResponse {
-    let statusCode : String
+struct SimpleResponse : Decodable {
+    let statusCode : Int
     let msg : String
 }
