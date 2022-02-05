@@ -19,6 +19,9 @@
 		1C734DDC2793DD26009605D6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDB2793DD26009605D6 /* Repository.swift */; };
 		1C734DDE2793E2E9009605D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDD2793E2E9009605D6 /* UserViewModel.swift */; };
 		1C734DE0279CF1F2009605D6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDF279CF1F2009605D6 /* WebService.swift */; };
+		1C734DE3279D10DF009605D6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE2279D10DF009605D6 /* Util.swift */; };
+		1C734DE5279D1232009605D6 /* WordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE4279D1232009605D6 /* WordResponse.swift */; };
+		1C734DE7279D12C4009605D6 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE6279D12C4009605D6 /* PostViewModel.swift */; };
 		1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC050278589A400AED43A /* amuIdeaApp.swift */; };
 		1C9FC053278589A400AED43A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC052278589A400AED43A /* SplashView.swift */; };
 		1C9FC055278589A600AED43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FC054278589A600AED43A /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		1C734DDB2793DD26009605D6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1C734DDD2793E2E9009605D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1C734DDF279CF1F2009605D6 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1C734DE2279D10DF009605D6 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		1C734DE4279D1232009605D6 /* WordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResponse.swift; sourceTree = "<group>"; };
+		1C734DE6279D12C4009605D6 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		1C9FC04D278589A400AED43A /* amuIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amuIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9FC050278589A400AED43A /* amuIdeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaApp.swift; sourceTree = "<group>"; };
 		1C9FC052278589A400AED43A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1C734DDD2793E2E9009605D6 /* UserViewModel.swift */,
+				1C734DE6279D12C4009605D6 /* PostViewModel.swift */,
 			);
 			path = vm;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 				1C5CE010278A8CF900D07F03 /* User.swift */,
 				1C5CE012278A8D3800D07F03 /* Post.swift */,
 				1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */,
+				1C734DE4279D1232009605D6 /* WordResponse.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -142,6 +150,14 @@
 				1C734DDB2793DD26009605D6 /* Repository.swift */,
 			);
 			path = repository;
+			sourceTree = "<group>";
+		};
+		1C734DE1279D10D3009605D6 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				1C734DE2279D10DF009605D6 /* Util.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		1C9FC044278589A400AED43A = {
@@ -169,6 +185,7 @@
 		1C9FC04F278589A400AED43A /* amuIdea */ = {
 			isa = PBXGroup;
 			children = (
+				1C734DE1279D10D3009605D6 /* util */,
 				1C734DDA2793DD08009605D6 /* repository */,
 				1C61CD7E27919F8E00784CEE /* data */,
 				1C5CE00F278A8CE600D07F03 /* model */,
@@ -487,7 +504,10 @@
 				1C09702227895FF80045F1BE /* MainView.swift in Sources */,
 				1C734DDC2793DD26009605D6 /* Repository.swift in Sources */,
 				1C9FC053278589A400AED43A /* SplashView.swift in Sources */,
+				1C734DE7279D12C4009605D6 /* PostViewModel.swift in Sources */,
 				1C734DDE2793E2E9009605D6 /* UserViewModel.swift in Sources */,
+				1C734DE3279D10DF009605D6 /* Util.swift in Sources */,
+				1C734DE5279D1232009605D6 /* WordResponse.swift in Sources */,
 				1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */,
 				1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */,
 				1C5CE011278A8CF900D07F03 /* User.swift in Sources */,

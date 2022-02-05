@@ -7,6 +7,6 @@
 
 import Foundation
 struct SimpleResponse : Decodable {
-    let statusCode : Int
-    let msg : String
+    let statusCode : Int?
+    let msg : String?
 }

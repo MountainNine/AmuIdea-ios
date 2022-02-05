@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct Post: Codable {
-    let id: String
-    let date: String
-    let words: String
-    let idea: String
+struct Post: Decodable {
+    let id: String?
+    let date: String?
+    let words: String?
+    let idea: String?
 }

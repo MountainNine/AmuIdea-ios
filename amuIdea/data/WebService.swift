@@ -29,4 +29,25 @@ class WebService {
                 }
             }
     }
+    
+    func addWord(post: Post, completion: @escaping(WordResponse?) -> ()) {
+        let params = ["id":post.id, "date":post.date]
+        
+        AF.request(URL(string: String(baseUrl + "addword"))!, method:.post, parameters: params as Parameters, encoding:JSONEncoding.default)
+            .validate(statusCode: 200..<500)
+            .responseDecodable(of:WordResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(WordResponse(statusCode: data!.statusCode, msg: data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                    break
+                }
+            }
+    }
 }

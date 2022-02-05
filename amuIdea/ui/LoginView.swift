@@ -14,6 +14,7 @@ struct LoginView : View {
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var willMoveToNextScreen : Int? = 0
+    private let userVM = UserViewModel()
 
     var body : some View {
         NavigationView {
@@ -98,9 +99,10 @@ struct LoginView : View {
     }
     
     func callLogin(id: String, pw: String) {
-        UserViewModel().callLogin(id: id, pw: pw) {
+        userVM.callLogin(id: id, pw: pw) {
             (response) in
             if(response?.statusCode == 200) {
+                userVM.putLoginId(id:self.editId)
                 self.willMoveToNextScreen = 1
             }
         }
