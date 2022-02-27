@@ -50,4 +50,46 @@ class WebService {
                 }
             }
     }
+    
+    func getWord(post: Post, completion: @escaping(WordResponse?) -> ()) {
+        let params = ["id": post.id, "date": post.date]
+        
+        AF.request(URL(string: String(baseUrl + "getword"))!, method:.post, parameters: params as Parameters, encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<500)
+            .responseDecodable(of:WordResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(WordResponse(statusCode: data!.statusCode, msg: data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                    break
+                }
+            }
+    }
+    
+    func addIdea(post: Post, completion: @escaping(PostResponse?) -> ()) {
+        let params = ["id": post.id, "date": post.date, "words": post.words, "idea": post.idea]
+        
+        AF.request(URL(string: String(baseUrl + "addidea"))!, method:.post, parameters: params as Parameters, encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<500)
+            .responseDecodable(of:PostResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(PostResponse(statusCode: data!.statusCode, msg: data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                    break
+                }
+            }
+    }
 }

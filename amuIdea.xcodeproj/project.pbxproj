@@ -16,6 +16,7 @@
 		1C5CE011278A8CF900D07F03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE010278A8CF900D07F03 /* User.swift */; };
 		1C5CE013278A8D3800D07F03 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE012278A8D3800D07F03 /* Post.swift */; };
 		1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */; };
+		1C608B8127CB265400C42DEA /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C608B8027CB265400C42DEA /* PostResponse.swift */; };
 		1C734DDC2793DD26009605D6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDB2793DD26009605D6 /* Repository.swift */; };
 		1C734DDE2793E2E9009605D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDD2793E2E9009605D6 /* UserViewModel.swift */; };
 		1C734DE0279CF1F2009605D6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDF279CF1F2009605D6 /* WebService.swift */; };
@@ -60,6 +61,7 @@
 		1C5CE010278A8CF900D07F03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C5CE012278A8D3800D07F03 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleResponse.swift; sourceTree = "<group>"; };
+		1C608B8027CB265400C42DEA /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		1C734DDB2793DD26009605D6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1C734DDD2793E2E9009605D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1C734DDF279CF1F2009605D6 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				1C5CE012278A8D3800D07F03 /* Post.swift */,
 				1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */,
 				1C734DE4279D1232009605D6 /* WordResponse.swift */,
+				1C608B8027CB265400C42DEA /* PostResponse.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				1C09702027895D400045F1BE /* StartView.swift in Sources */,
 				1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */,
 				1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */,
+				1C608B8127CB265400C42DEA /* PostResponse.swift in Sources */,
 				1C5CE013278A8D3800D07F03 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
