@@ -11,23 +11,33 @@ struct WordItem: Identifiable {
     var id = UUID()
     var date: String
     var words: String
-    var sentence: String
+    var idea: String
 }
 
-var wordItem: [WordItem] = [
-    WordItem(date: "2022/01/09", words: "word1 word2 word3", sentence: " word1word2word3"),
-    WordItem(date: "2022/01/09", words: "word1 word2 word3", sentence: " word1word2word3")
-]
 
 struct ListView: View {
+    @State var wordItem: [WordItem] = []
+    let postVM = PostViewModel()
+    let userVM = UserViewModel()
     var body: some View {
         List(wordItem) {
             item in VStack(alignment:.leading) {
                 Text(item.date)
                 Text(item.words)
-                Text(item.sentence)
+                Text(item.idea)
             }
-        }
+        }.onAppear {
+            postVM.callGetIdeas(id:userVM.getLoginId(), date: Util().getDateFormat()) {(response) in
+                if response?.statusCode == 200 {
+                    let items = response!.msg!
+                    for item in items {
+                        wordItem.append(WordItem(date: item["StartDate"]!, words:item["Words"]!, idea:item["Idea"]!))
+                    }
+
+                }
+                
+            }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

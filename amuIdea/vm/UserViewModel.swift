@@ -13,6 +13,11 @@ class UserViewModel: ObservableObject {
         WebService().login(user:user, completion: completion)
     }
     
+    func callAccount(id: String, pw: String, nick: String, completion:@escaping(SimpleResponse?) -> ()) {
+        let user = User(id: id,pw: pw, name: nick)
+        WebService().createAccount(user: user, completion: completion)
+    }
+    
     func putLoginId(id:String) {
         UserDefaults.standard.set(id, forKey:"loginID")
     }

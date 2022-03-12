@@ -8,5 +8,5 @@
 import Foundation
 struct PostResponse : Decodable {
     let statusCode : Int?
-    let msg : [String: String]?
+    let msg : [[String: String]]?
 }

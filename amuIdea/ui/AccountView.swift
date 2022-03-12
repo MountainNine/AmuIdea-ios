@@ -14,6 +14,10 @@ struct AccountView : View {
     @State private var editPw = ""
     @State private var editNick = ""
     @State private var isToggled = false
+    @State private var showAlert = false
+    @State private var alertMessage = ""
+
+    var userVM = UserViewModel()
 
     var body : some View {
         VStack(spacing: 0.0) {
@@ -49,20 +53,50 @@ struct AccountView : View {
                     .frame(width: 48.0)
                 
                 VStack {
-                    TextField("닉네임을 입력하세요.", text: $editPw)
+                    TextField("닉네임을 입력하세요.", text: $editNick)
                     Divider()
                 }
             }
             Spacer()
                 .frame(height:20)
             Button(action: {
+                guard !editId.isEmpty else {
+                    self.showAlert = true
+                    self.alertMessage = "아이디를 입력하세요."
+                    return
+                }
                 
+                guard !editPw.isEmpty else {
+                    self.showAlert = true
+                    self.alertMessage = "비밀번호를 입력하세요."
+                    return
+                }
+                
+                guard !editNick.isEmpty else {
+                    self.showAlert = true
+                    self.alertMessage = "닉네임을 입력하세요."
+                    return
+                }
+                userVM.callAccount(id: self.editId, pw: self.editPw, nick: self.editNick) {
+                    (response) in
+                    if(response?.msg != nil) {
+                        self.showAlert = true
+                        self.alertMessage = response?.msg ?? ""
+                    }
+                    if(response?.statusCode == 200) {
+                        @Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
             }) {
                 Spacer()
                 Text("회원가입")
                     .foregroundColor(Color.white)
                 Spacer()
             }.frame(height: 40.0).background(Color.black)
+                .alert(isPresented:$showAlert) {
+                    Alert(title:Text("알림"), message: Text(self.alertMessage), dismissButton:.default(Text("확인")))
+                }
             
             Spacer()
                 .frame(height:20)

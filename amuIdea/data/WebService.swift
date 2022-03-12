@@ -30,6 +30,27 @@ class WebService {
             }
     }
     
+    func createAccount(user: User, completion: @escaping(SimpleResponse?) -> ()) {
+        let params = ["id":user.id, "pw":user.pw, "name":user.name]
+        
+        AF.request(URL(string: String(baseUrl + "account"))!, method:.post, parameters:params as Parameters, encoding:JSONEncoding.default)
+            .validate(statusCode: 200..<500)
+            .responseDecodable(of:SimpleResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(SimpleResponse(statusCode:data!.statusCode, msg:data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                    break
+                }
+            }
+    }
+    
     func addWord(post: Post, completion: @escaping(WordResponse?) -> ()) {
         let params = ["id":post.id, "date":post.date]
         
@@ -72,11 +93,30 @@ class WebService {
             }
     }
     
-    func addIdea(post: Post, completion: @escaping(PostResponse?) -> ()) {
+    func addIdea(post: Post, completion: @escaping(SimpleResponse?) -> ()) {
         let params = ["id": post.id, "date": post.date, "words": post.words, "idea": post.idea]
         
         AF.request(URL(string: String(baseUrl + "addidea"))!, method:.post, parameters: params as Parameters, encoding: JSONEncoding.default)
             .validate(statusCode: 200..<500)
+            .responseDecodable(of:SimpleResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(SimpleResponse(statusCode: data!.statusCode, msg: data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                    break
+                }
+            }
+    }
+    
+    func getIdeas(post: Post, completion: @escaping(PostResponse?) -> ()) {
+        let params = ["id": post.id, "date": post.date]
+        AF.request(URL(string: String(baseUrl + "getidea"))!, method: .post, parameters: params as Parameters, encoding: JSONEncoding.default).validate(statusCode: 200..<500)
             .responseDecodable(of:PostResponse.self) {response in
                 switch response.result {
                 case .success(let code):
@@ -88,7 +128,6 @@ class WebService {
                 case .failure(let err):
                     print(err)
                     completion(nil)
-                    break
                 }
             }
     }
