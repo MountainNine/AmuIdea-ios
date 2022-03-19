@@ -28,6 +28,9 @@ class UserViewModel: ObservableObject {
     }
     
     func getAutoLogin()-> Bool {
+        if(UserDefaults.standard.object(forKey:"autoLogin") == nil) {
+            return false
+        }
         return UserDefaults.standard.value(forKey: "autoLogin") as! Bool
     }
     
