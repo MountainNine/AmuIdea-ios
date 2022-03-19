@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7F19AC74C5452B3C9380EC /* Pods_amuIdea_amuIdeaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A18AFD336E06CD2AEDB9AFF /* Pods_amuIdea_amuIdeaUITests.framework */; };
+		1AF82BC04DE1B2E4B2D0230C /* Pods_amuIdea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18A1FAF7121D594B9ED886B /* Pods_amuIdea.framework */; };
+		1C09702027895D400045F1BE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09701F27895D400045F1BE /* StartView.swift */; };
+		1C09702227895FF80045F1BE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09702127895FF80045F1BE /* MainView.swift */; };
 		1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1918ED27869D8A00FDE142 /* LoginView.swift */; };
+		1C5AB7D927E5762D00BAEE4E /* SimpleNumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AB7D827E5762D00BAEE4E /* SimpleNumResponse.swift */; };
+		1C5CE00D278A7B5D00D07F03 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE00C278A7B5D00D07F03 /* ListView.swift */; };
+		1C5CE011278A8CF900D07F03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE010278A8CF900D07F03 /* User.swift */; };
+		1C5CE013278A8D3800D07F03 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE012278A8D3800D07F03 /* Post.swift */; };
+		1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */; };
+		1C608B8127CB265400C42DEA /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C608B8027CB265400C42DEA /* PostResponse.swift */; };
+		1C734DDC2793DD26009605D6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDB2793DD26009605D6 /* Repository.swift */; };
+		1C734DDE2793E2E9009605D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDD2793E2E9009605D6 /* UserViewModel.swift */; };
+		1C734DE0279CF1F2009605D6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DDF279CF1F2009605D6 /* WebService.swift */; };
+		1C734DE3279D10DF009605D6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE2279D10DF009605D6 /* Util.swift */; };
+		1C734DE5279D1232009605D6 /* WordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE4279D1232009605D6 /* WordResponse.swift */; };
+		1C734DE7279D12C4009605D6 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C734DE6279D12C4009605D6 /* PostViewModel.swift */; };
 		1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC050278589A400AED43A /* amuIdeaApp.swift */; };
-		1C9FC053278589A400AED43A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC052278589A400AED43A /* ContentView.swift */; };
+		1C9FC053278589A400AED43A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC052278589A400AED43A /* SplashView.swift */; };
 		1C9FC055278589A600AED43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FC054278589A600AED43A /* Assets.xcassets */; };
 		1C9FC058278589A600AED43A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FC057278589A600AED43A /* Preview Assets.xcassets */; };
 		1C9FC062278589A700AED43A /* amuIdeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC061278589A700AED43A /* amuIdeaTests.swift */; };
 		1C9FC06C278589A700AED43A /* amuIdeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC06B278589A700AED43A /* amuIdeaUITests.swift */; };
 		1C9FC06E278589A700AED43A /* amuIdeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FC06D278589A700AED43A /* amuIdeaUITestsLaunchTests.swift */; };
 		1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */; };
+		1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7B7F227895A9800B624FF /* AccountView.swift */; };
+		FDDA3240835718E004661A07 /* Pods_amuIdeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47279805B1A08569C3AD784 /* Pods_amuIdeaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +54,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5C3B25C71A709A20F9197D /* Pods-amuIdea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdea.release.xcconfig"; path = "Target Support Files/Pods-amuIdea/Pods-amuIdea.release.xcconfig"; sourceTree = "<group>"; };
+		1C09701F27895D400045F1BE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		1C09702127895FF80045F1BE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1C1918ED27869D8A00FDE142 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1C5AB7D827E5762D00BAEE4E /* SimpleNumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNumResponse.swift; sourceTree = "<group>"; };
+		1C5CE00C278A7B5D00D07F03 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		1C5CE010278A8CF900D07F03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1C5CE012278A8D3800D07F03 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleResponse.swift; sourceTree = "<group>"; };
+		1C608B8027CB265400C42DEA /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		1C734DDB2793DD26009605D6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1C734DDD2793E2E9009605D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		1C734DDF279CF1F2009605D6 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1C734DE2279D10DF009605D6 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		1C734DE4279D1232009605D6 /* WordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResponse.swift; sourceTree = "<group>"; };
+		1C734DE6279D12C4009605D6 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		1C9FC04D278589A400AED43A /* amuIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amuIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9FC050278589A400AED43A /* amuIdeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaApp.swift; sourceTree = "<group>"; };
-		1C9FC052278589A400AED43A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C9FC052278589A400AED43A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1C9FC054278589A600AED43A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9FC057278589A600AED43A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C9FC05D278589A700AED43A /* amuIdeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amuIdeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +81,15 @@
 		1C9FC06B278589A700AED43A /* amuIdeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaUITests.swift; sourceTree = "<group>"; };
 		1C9FC06D278589A700AED43A /* amuIdeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amuIdeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		1CF7B7F227895A9800B624FF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2864E6F86809E3EFE0888544 /* Pods-amuIdea-amuIdeaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdea-amuIdeaUITests.release.xcconfig"; path = "Target Support Files/Pods-amuIdea-amuIdeaUITests/Pods-amuIdea-amuIdeaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B80302FAADC6B5A5FEB88E4 /* Pods-amuIdeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdeaTests.debug.xcconfig"; path = "Target Support Files/Pods-amuIdeaTests/Pods-amuIdeaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		631A92CF9005970CF8562B2E /* Pods-amuIdeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdeaTests.release.xcconfig"; path = "Target Support Files/Pods-amuIdeaTests/Pods-amuIdeaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A18AFD336E06CD2AEDB9AFF /* Pods_amuIdea_amuIdeaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amuIdea_amuIdeaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BE683AAC76F18723187127 /* Pods-amuIdea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdea.debug.xcconfig"; path = "Target Support Files/Pods-amuIdea/Pods-amuIdea.debug.xcconfig"; sourceTree = "<group>"; };
+		C18A1FAF7121D594B9ED886B /* Pods_amuIdea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amuIdea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47279805B1A08569C3AD784 /* Pods_amuIdeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amuIdeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5554EB17A824B5B5389F93B /* Pods-amuIdea-amuIdeaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amuIdea-amuIdeaUITests.debug.xcconfig"; path = "Target Support Files/Pods-amuIdea-amuIdeaUITests/Pods-amuIdea-amuIdeaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF82BC04DE1B2E4B2D0230C /* Pods_amuIdea.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDA3240835718E004661A07 /* Pods_amuIdeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +113,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7F19AC74C5452B3C9380EC /* Pods_amuIdea_amuIdeaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5CE00E278A8C9400D07F03 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				1C734DDD2793E2E9009605D6 /* UserViewModel.swift */,
+				1C734DE6279D12C4009605D6 /* PostViewModel.swift */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		1C5CE00F278A8CE600D07F03 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1C5CE010278A8CF900D07F03 /* User.swift */,
+				1C5CE012278A8D3800D07F03 /* Post.swift */,
+				1C5CE016278A8E7E00D07F03 /* SimpleResponse.swift */,
+				1C734DE4279D1232009605D6 /* WordResponse.swift */,
+				1C608B8027CB265400C42DEA /* PostResponse.swift */,
+				1C5AB7D827E5762D00BAEE4E /* SimpleNumResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1C61CD7E27919F8E00784CEE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1C734DDF279CF1F2009605D6 /* WebService.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		1C734DDA2793DD08009605D6 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				1C734DDB2793DD26009605D6 /* Repository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		1C734DE1279D10D3009605D6 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				1C734DE2279D10DF009605D6 /* Util.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		1C9FC044278589A400AED43A = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +173,8 @@
 				1C9FC060278589A700AED43A /* amuIdeaTests */,
 				1C9FC06A278589A700AED43A /* amuIdeaUITests */,
 				1C9FC04E278589A400AED43A /* Products */,
+				40E7206828D501AE7DCCFFAE /* Pods */,
+				35D2C46A5E8AAE7ABDF5A1A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,12 +191,15 @@
 		1C9FC04F278589A400AED43A /* amuIdea */ = {
 			isa = PBXGroup;
 			children = (
+				1C734DE1279D10D3009605D6 /* util */,
+				1C734DDA2793DD08009605D6 /* repository */,
+				1C61CD7E27919F8E00784CEE /* data */,
+				1C5CE00F278A8CE600D07F03 /* model */,
+				1C5CE00E278A8C9400D07F03 /* vm */,
+				1CF7B7F127895A2F00B624FF /* ui */,
 				1C9FC050278589A400AED43A /* amuIdeaApp.swift */,
-				1C9FC052278589A400AED43A /* ContentView.swift */,
-				1C1918ED27869D8A00FDE142 /* LoginView.swift */,
 				1C9FC054278589A600AED43A /* Assets.xcassets */,
 				1C9FC056278589A600AED43A /* Preview Content */,
-				1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */,
 			);
 			path = amuIdea;
 			sourceTree = "<group>";
@@ -133,6 +229,43 @@
 			path = amuIdeaUITests;
 			sourceTree = "<group>";
 		};
+		1CF7B7F127895A2F00B624FF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1C9FC052278589A400AED43A /* SplashView.swift */,
+				1C1918ED27869D8A00FDE142 /* LoginView.swift */,
+				1CF7B7EF2786AE1D00B624FF /* CheckBoxView.swift */,
+				1CF7B7F227895A9800B624FF /* AccountView.swift */,
+				1C09701F27895D400045F1BE /* StartView.swift */,
+				1C09702127895FF80045F1BE /* MainView.swift */,
+				1C5CE00C278A7B5D00D07F03 /* ListView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		35D2C46A5E8AAE7ABDF5A1A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18A1FAF7121D594B9ED886B /* Pods_amuIdea.framework */,
+				8A18AFD336E06CD2AEDB9AFF /* Pods_amuIdea_amuIdeaUITests.framework */,
+				D47279805B1A08569C3AD784 /* Pods_amuIdeaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40E7206828D501AE7DCCFFAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE683AAC76F18723187127 /* Pods-amuIdea.debug.xcconfig */,
+				0D5C3B25C71A709A20F9197D /* Pods-amuIdea.release.xcconfig */,
+				F5554EB17A824B5B5389F93B /* Pods-amuIdea-amuIdeaUITests.debug.xcconfig */,
+				2864E6F86809E3EFE0888544 /* Pods-amuIdea-amuIdeaUITests.release.xcconfig */,
+				2B80302FAADC6B5A5FEB88E4 /* Pods-amuIdeaTests.debug.xcconfig */,
+				631A92CF9005970CF8562B2E /* Pods-amuIdeaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C9FC071278589A700AED43A /* Build configuration list for PBXNativeTarget "amuIdea" */;
 			buildPhases = (
+				93AB0DA88424C0A276A0F10E /* [CP] Check Pods Manifest.lock */,
 				1C9FC049278589A400AED43A /* Sources */,
 				1C9FC04A278589A400AED43A /* Frameworks */,
 				1C9FC04B278589A400AED43A /* Resources */,
+				6BF8CEB8AAD1DB81813ED712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C9FC074278589A700AED43A /* Build configuration list for PBXNativeTarget "amuIdeaTests" */;
 			buildPhases = (
+				35B966E83B8C41CC07F7E641 /* [CP] Check Pods Manifest.lock */,
 				1C9FC059278589A700AED43A /* Sources */,
 				1C9FC05A278589A700AED43A /* Frameworks */,
 				1C9FC05B278589A700AED43A /* Resources */,
@@ -175,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C9FC077278589A700AED43A /* Build configuration list for PBXNativeTarget "amuIdeaUITests" */;
 			buildPhases = (
+				D35E48661EAA6F6CBF074557 /* [CP] Check Pods Manifest.lock */,
 				1C9FC063278589A700AED43A /* Sources */,
 				1C9FC064278589A700AED43A /* Frameworks */,
 				1C9FC065278589A700AED43A /* Resources */,
+				CBA650773E09055EE23CB638 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,15 +396,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35B966E83B8C41CC07F7E641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-amuIdeaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF8CEB8AAD1DB81813ED712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-amuIdea/Pods-amuIdea-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-amuIdea/Pods-amuIdea-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-amuIdea/Pods-amuIdea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93AB0DA88424C0A276A0F10E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-amuIdea-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA650773E09055EE23CB638 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-amuIdea-amuIdeaUITests/Pods-amuIdea-amuIdeaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-amuIdea-amuIdeaUITests/Pods-amuIdea-amuIdeaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-amuIdea-amuIdeaUITests/Pods-amuIdea-amuIdeaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35E48661EAA6F6CBF074557 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-amuIdea-amuIdeaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C9FC049278589A400AED43A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5CE00D278A7B5D00D07F03 /* ListView.swift in Sources */,
 				1C1918EE27869D8A00FDE142 /* LoginView.swift in Sources */,
-				1C9FC053278589A400AED43A /* ContentView.swift in Sources */,
+				1C734DE0279CF1F2009605D6 /* WebService.swift in Sources */,
+				1C5AB7D927E5762D00BAEE4E /* SimpleNumResponse.swift in Sources */,
+				1C09702227895FF80045F1BE /* MainView.swift in Sources */,
+				1C734DDC2793DD26009605D6 /* Repository.swift in Sources */,
+				1C9FC053278589A400AED43A /* SplashView.swift in Sources */,
+				1C734DE7279D12C4009605D6 /* PostViewModel.swift in Sources */,
+				1C734DDE2793E2E9009605D6 /* UserViewModel.swift in Sources */,
+				1C734DE3279D10DF009605D6 /* Util.swift in Sources */,
+				1C734DE5279D1232009605D6 /* WordResponse.swift in Sources */,
+				1C5CE017278A8E7E00D07F03 /* SimpleResponse.swift in Sources */,
 				1C9FC051278589A400AED43A /* amuIdeaApp.swift in Sources */,
+				1C5CE011278A8CF900D07F03 /* User.swift in Sources */,
+				1C09702027895D400045F1BE /* StartView.swift in Sources */,
 				1CF7B7F02786AE1D00B624FF /* CheckBoxView.swift in Sources */,
+				1CF7B7F327895A9800B624FF /* AccountView.swift in Sources */,
+				1C608B8127CB265400C42DEA /* PostResponse.swift in Sources */,
+				1C5CE013278A8D3800D07F03 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +677,7 @@
 		};
 		1C9FC072278589A700AED43A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BE683AAC76F18723187127 /* Pods-amuIdea.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,6 +707,7 @@
 		};
 		1C9FC073278589A700AED43A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5C3B25C71A709A20F9197D /* Pods-amuIdea.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +737,7 @@
 		};
 		1C9FC075278589A700AED43A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B80302FAADC6B5A5FEB88E4 /* Pods-amuIdeaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +757,7 @@
 		};
 		1C9FC076278589A700AED43A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631A92CF9005970CF8562B2E /* Pods-amuIdeaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +777,7 @@
 		};
 		1C9FC078278589A700AED43A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5554EB17A824B5B5389F93B /* Pods-amuIdea-amuIdeaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +795,7 @@
 		};
 		1C9FC079278589A700AED43A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2864E6F86809E3EFE0888544 /* Pods-amuIdea-amuIdeaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
