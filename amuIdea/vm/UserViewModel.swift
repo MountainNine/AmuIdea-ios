@@ -22,7 +22,21 @@ class UserViewModel: ObservableObject {
         UserDefaults.standard.set(id, forKey:"loginID")
     }
     
+    
+    func putAutoLogin(isChecked:Bool) {
+        UserDefaults.standard.set(isChecked, forKey: "autoLogin")
+    }
+    
+    func getAutoLogin()-> Bool {
+        return UserDefaults.standard.value(forKey: "autoLogin") as! Bool
+    }
+    
     func getLoginId()-> String {
         return UserDefaults.standard.value(forKey: "loginID") as! String
+    }
+    
+    func getCurrentState(id: String, date: String, completion:@escaping(SimpleNumResponse?) -> ()) {
+        let post = Post(id: id, date: date, words: nil, idea: nil)
+        WebService().getCurrentState(post: post, completion: completion)
     }
 }

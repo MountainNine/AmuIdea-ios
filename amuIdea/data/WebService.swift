@@ -131,4 +131,22 @@ class WebService {
                 }
             }
     }
+    
+    func getCurrentState(post: Post, completion: @escaping(SimpleNumResponse?) -> ()) {
+        let params = ["id":post.id, "date": post.date]
+        AF.request(URL(string: String(baseUrl + "getstate"))!, method: .post, parameters: params as Parameters, encoding: JSONEncoding.default).validate(statusCode:200..<500)
+            .responseDecodable(of:SimpleNumResponse.self) {response in
+                switch response.result {
+                case .success(let code):
+                    print(code)
+                    let data = response.value
+                    completion(SimpleNumResponse(statusCode: data!.statusCode, msg:data!.msg))
+                    break
+                    
+                case .failure(let err):
+                    print(err)
+                    completion(nil)
+                }
+            }
+    }
 }

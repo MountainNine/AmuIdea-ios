@@ -13,7 +13,8 @@ struct LoginView : View {
     @State private var isToggled = false
     @State private var showAlert = false
     @State private var alertMessage = ""
-    @State private var willMoveToNextScreen : Int? = 0
+    @State private var willMoveToNextScreen : Int? = -1
+    @State private var nextScreenNum : Int? = -1
     private let userVM = UserViewModel()
 
     var body : some View {
@@ -55,7 +56,7 @@ struct LoginView : View {
             }
             Spacer()
                 .frame(height:20)
-            NavigationLink(destination: StartView(), tag: 1, selection: $willMoveToNextScreen) {
+            NavigationLink(destination: getNextView(), tag: 1, selection: $willMoveToNextScreen) {
             Button(action: {
                 guard !editId.isEmpty else {
                     self.showAlert = true
@@ -83,9 +84,9 @@ struct LoginView : View {
             
             Spacer()
                 .frame(height:20)
-            NavigationLink(destination: AccountView(), tag: 2, selection:$willMoveToNextScreen) {
+            NavigationLink(destination: AccountView(), tag: 0, selection:$willMoveToNextScreen) {
                 Button(action: {
-                    self.willMoveToNextScreen = 2
+                    self.willMoveToNextScreen = 0
                 }) {
                     Spacer()
                     Text("회원가입")
@@ -102,9 +103,43 @@ struct LoginView : View {
         userVM.callLogin(id: id, pw: pw) {
             (response) in
             if(response?.statusCode == 200) {
+                userVM.putAutoLogin(isChecked: isToggled)
                 userVM.putLoginId(id:self.editId)
-                self.willMoveToNextScreen = 1
+                userVM.getCurrentState(id: id, date: Util().getDateFormat()) {(response) in
+                    if(response?.statusCode == 200) {
+                        let msg = response?.msg
+                        switch msg {
+                        case 0:
+                            self.nextScreenNum = 1
+                        case 1:
+                            self.nextScreenNum = 2
+                        case 2:
+                            self.nextScreenNum = 3
+                        case .none:
+                            self.nextScreenNum = -1
+                        case .some(_):
+                            self.nextScreenNum = -1
+                        }
+                        self.willMoveToNextScreen = 1
+                    }
+                }
             }
+        }
+    }
+    
+    @ViewBuilder
+    func getNextView()->some View {
+        switch nextScreenNum {
+        case 1:
+             StartView()
+        case 2:
+             MainView()
+        case 3:
+             ListView()
+        case .none:
+            StartView()
+        case .some(_):
+            StartView()
         }
     }
 }
